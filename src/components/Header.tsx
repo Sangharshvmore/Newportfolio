@@ -1,6 +1,7 @@
 import React from 'react';
 import { Moon, Sun, User, Phone } from 'lucide-react';
-
+// @ts-ignore
+import logo from '../img/gojo.png';
 interface HeaderProps {
   darkMode: boolean;
   setDarkMode: (value: boolean) => void;
@@ -14,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img
-              src=".\src\img\gojo_chibi_by_merthony_dghyvpx-fullview.png"  // Use your actual image path
+              src={logo}  // Use your actual image path
               alt="Logo"
               className="w-14 h-14 rounded-lg logo-animate"
             />
