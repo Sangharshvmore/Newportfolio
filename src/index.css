@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom logo animation */
+@keyframes moveRight {
+  0%, 100% { transform: translateX(-50px); }
+  50% { transform: translateX(550px); }
+}
+.logo-animate {
+  animation: moveRight 7s infinite;
+}
